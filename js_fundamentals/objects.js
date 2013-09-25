@@ -55,3 +55,16 @@ var movie = {
 
 movie.print_movie;
 
+///////////////////////////////////Cris's solution 
+var movie = {
+	name: "5th Element",
+	duration: "140",
+	stars: ["Bruce Willis","Mila Jovovic", "Gary Oldman"]
+} 
+
+$(document).ready(function(){
+	var result = movie.name + " lasts "+ movie.duration + " minutes. Stars: " ;
+	result = result + movie.stars.join(", ");
+	$("p").text(result);
+})
+
