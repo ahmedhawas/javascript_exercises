@@ -13,6 +13,19 @@
 // cumin
 // cocoa
 
+var recipe = {
+	title: "Mole",
+	servings: 2,
+	ingredients: ["cinnamon", "cumin", "cocoa"]
+}
+
+document.write(recipe.title + "\n");
+document.write(recipe.servings + "\n");
+for (i=0; i< recipe.ingredients.length ; i++){
+	document.write(recipe.ingredients[i] + "\n");
+}
+
+
 // EXERCISE: The Reading List
 
 // Keep track of which books you read and which books you want to read!
@@ -28,5 +41,17 @@
 // Create an object to store the following information about your favorite movie: title (a string), duration (a number), and stars (an array of strings).
 // Create a function to print out the movie information like so: "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."
 
+var movie = {
+	title:"Snatch", 
+	duration: "2 hours",
+	stars: ["Jason Statham", "Brad Pitt", "Benicio Del Toro", "Vinnie Jones"]
+	print_movie: function() {
+		console.log(title +" lasts for "+ duration +"Stars: ");
+		for(i=0; i< stars.length;i++){
+			console.log(stars[i] + ",");
+		}
+	}
+}
 
+movie.print_movie;
 
